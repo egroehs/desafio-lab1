@@ -48,6 +48,27 @@ public class Loja {
         return "Loja: " + nome + ", Funcionários: " + quantidadeFuncionarios + ", Salário Base: " + salarioBaseFuncionario;
     }
 
+    public double gastosComSalario() {
+        if (salarioBaseFuncionario == -1) {
+            return -1;
+        } else {
+            return salarioBaseFuncionario * quantidadeFuncionarios;
+        }
+    }
+
+    public char tamanhoDaLoja() {
+        if(quantidadeFuncionarios < 10) {
+            return 'P';
+        }
+        else if(quantidadeFuncionarios >= 10 && quantidadeFuncionarios <= 30) {
+            return 'M';
+        }
+        else {
+            return 'G';
+        }
+        
+    }
+
 
 }
 
