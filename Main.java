@@ -15,5 +15,8 @@ public class Main {
         System.out.println("Tamanho loja 1: " + loja1.tamanhoDaLoja());
         System.out.println("Tamanho loja 2: " + loja2.tamanhoDaLoja());
         System.out.println("Tamanho loja 3: " + loja3.tamanhoDaLoja());
+    
+        Produto produto1 = new Produto("produto 1", 12);
+        System.out.println(produto1);
     }
 }
