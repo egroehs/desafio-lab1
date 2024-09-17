@@ -18,5 +18,15 @@ public class Main {
     
         Produto produto1 = new Produto("produto 1", 12);
         System.out.println(produto1);
+
+        Endereco endereco = new Endereco("castro alves", "novo hamburgo", "RS", "BR", "93545324", "322", "1");
+        System.out.println(endereco);
+
+
+        Data data1 = new Data(29, 2, 2024);
+        System.out.println(data1);
+
+        Data data2 = new Data(30, 2, 2023);
+        System.out.println(data2);
     }
 }

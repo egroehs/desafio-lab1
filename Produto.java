@@ -27,6 +27,4 @@ public class Produto {
     public String toString() {
         return "Produto " + nome + " R$" + preco;
     }
-
-
 }
