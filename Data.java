@@ -49,7 +49,7 @@ public class Data {
         int[] diasNoMes = {31, 28, 31, 30, 31, 30, 31, 31, 30, 31, 30, 31};
 
         // Check for leap year and adjust February days
-        if (mes == 2 && verificaAnoBissexto(ano)) {
+        if (mes == 2 && verificaAnoBissexto()) {
             return dia >= 1 && dia <= 29;
         } else {
             return dia >= 1 && dia <= diasNoMes[mes - 1];
@@ -57,8 +57,8 @@ public class Data {
     }
 
     // Moved inside the class and fixed condition
-    private boolean verificaAnoBissexto(int ano) {
-        return (ano % 4 == 0 && ano % 100 != 0) || (ano % 400 == 0);
+    public boolean verificaAnoBissexto() {
+        return (this.ano % 4 == 0 && this.ano % 100 != 0) || (this.ano % 400 == 0);
     }
 
     @Override

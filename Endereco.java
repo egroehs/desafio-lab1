@@ -21,7 +21,7 @@ public class Endereco {
         return nomeDaRua;
     }
 
-    public void setNome(String nomeDaRua) {
+    public void setNomeDaRua(String nomeDaRua) {
         this.nomeDaRua = nomeDaRua;
     }
 
